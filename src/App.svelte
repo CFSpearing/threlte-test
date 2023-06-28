@@ -2,9 +2,17 @@
 	import { Canvas, InteractiveObject, OrbitControls, T } from '@threlte/core'
 	import { spring } from 'svelte/motion'
 	import { degToRad } from 'three/src/math/MathUtils.js'
+  import Header from './Header.svelte'
+  import Chat from './Chat.svelte'
+
 
 	const scale = spring(1)
 </script>
+
+<div>
+  <Header/>
+  <Chat/>
+  </div>
 
 <div>
 	<Canvas>
@@ -39,7 +47,6 @@
 		</T.Mesh>
 	</Canvas>
 </div>
-
 <style>
 	div {
 		height: 100%;
