@@ -7,7 +7,7 @@
   </script>
   
   <header>
-  <h1>3js Diplomacy</h1>
+  <h1>Threlte Diplomacy</h1>
     {#if $username}
       <div class="user-bio">
         
@@ -19,6 +19,6 @@
   
       {:else}
   
-        <h3>3js Diplomacy</h3>
+        <h3>Threlte Diplomacy</h3>
     {/if}
   </header>

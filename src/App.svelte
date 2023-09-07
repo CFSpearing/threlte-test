@@ -4,8 +4,9 @@
 	import { degToRad } from 'three/src/math/MathUtils.js'
   import Header from './Header.svelte'
   import Chat from './Chat.svelte'
-  import {T, Canvas, PerspectiveCamera, AmbientLight, OrbitControls, InteractiveObject} from '@threlte/core';
+  import {T, Canvas, PerspectiveCamera, AmbientLight, OrbitControls, InteractiveObject, T} from '@threlte/core';
   import Hexglobe from "./lib/Hexglobe.svelte";
+    import { Mesh } from 'three';
 
 
 
@@ -52,6 +53,7 @@
 			</T.Group>
 		  {#if hexData}
 			<Hexglobe hexdata={hexData}/>
+      T
 		  {/if}
 	</Canvas>
 </div>
